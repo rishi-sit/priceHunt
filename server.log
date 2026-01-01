@@ -1,0 +1,32 @@
+INFO:     Started server process [80426]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Zepto serviceability error: Expecting value: line 1 column 1 (char 0)
+Zepto API search error: Expecting value: line 1 column 1 (char 0)
+INFO:     127.0.0.1:54290 - "GET /api/search?q=amul+butter&pincode=560087 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52357 - "GET /?q=nandini+milk+1ltr&pincode=560087 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52357 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52358 - "GET /static/js/app.js HTTP/1.1" 304 Not Modified
+Instamart store lookup error: 
+Zepto serviceability error: 
+Amazon search error: 
+Flipkart search error: 
+Zepto API search error: 
+Instamart API search error: 
+Instamart web search error: [Errno 8] nodename nor servname provided, or not known
+INFO:     127.0.0.1:52497 - "GET /?q=nandini+milk+1ltr&pincode=560087 HTTP/1.1" 200 OK
+Zepto serviceability error: Expecting value: line 1 column 1 (char 0)
+Zepto API search error: Expecting value: line 1 column 1 (char 0)
+INFO:     127.0.0.1:52497 - "GET /api/search?q=nandini%20milk%201ltr&pincode=560087 HTTP/1.1" 200 OK
+Zepto web search error: 
+Zepto serviceability error: Expecting value: line 1 column 1 (char 0)
+Zepto API search error: Expecting value: line 1 column 1 (char 0)
+INFO:     127.0.0.1:52539 - "GET /api/search?q=guava&pincode=560087 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52921 - "GET /?q=guava&pincode=560087 HTTP/1.1" 200 OK
+Zepto serviceability error: Expecting value: line 1 column 1 (char 0)
+Zepto API search error: Expecting value: line 1 column 1 (char 0)
+INFO:     127.0.0.1:52921 - "GET /api/search?q=guava&pincode=560087 HTTP/1.1" 200 OK
+Zepto serviceability error: Expecting value: line 1 column 1 (char 0)
+Zepto API search error: Expecting value: line 1 column 1 (char 0)
+INFO:     127.0.0.1:52923 - "GET /api/search?q=milk&pincode=560087 HTTP/1.1" 200 OK
