@@ -1,10 +1,5 @@
-"""Zepto scraper using Playwright browser automation.
-
-Note: This scraper works best when run directly (CLI) rather than
-through the web server due to Playwright/uvicorn compatibility issues.
-"""
+"""Zepto scraper using Playwright browser automation."""
 from typing import List
-import os
 import re
 from .base import BaseScraper, ProductResult
 
@@ -17,15 +12,9 @@ class ZeptoScraper(BaseScraper):
     
     def __init__(self, pincode: str = "560087"):
         super().__init__(pincode)
-        # Check if we're running in web server context
-        self._is_web_server = os.environ.get("UVICORN_RUNNING", "").lower() == "true"
         
     async def search(self, query: str) -> List[ProductResult]:
         """Search for products on Zepto."""
-        # Skip browser automation in web server context for stability
-        if self._is_web_server:
-            return []
-        
         try:
             return await self._browser_search(query)
         except Exception as e:
